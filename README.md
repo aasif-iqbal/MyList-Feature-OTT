@@ -1,5 +1,6 @@
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone <-your-repo-url->
+
 cd MyList-Feature-OTT
 
 # 2. Start MongoDB + API (auto builds & hot-reloads in dev)
@@ -7,6 +8,15 @@ docker-compose up --build
 
 # API will be available at:
 http://localhost:3000
+
+### Local Development
+```bash      
+npm start
+```
+### Run Test in local
+```bash      
+npm run test
+```
 
 ### Local Development with Docker
 

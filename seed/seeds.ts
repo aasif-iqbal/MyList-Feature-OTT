@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { UserModel } from './models/user.model';
-import { MovieModel } from './models/movie.model';
-import { TVShowModel } from './models/tvshow.model';
+import { UserModel } from '../src/models/user.model';
+import { MovieModel } from '../src/models/movie.model';
+import { TVShowModel } from '../src/models/tvshow.model';
 import { v4 as uuidv4 } from 'uuid';
 
 dotenv.config();
