@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+
+  test:
+    build: .
+    environment:
+      MONGO_URI: mongodb://mongo:27017/ott_db_test
+    depends_on:
+      mongo:
+        condition: service_healthy
+    command: npm test
