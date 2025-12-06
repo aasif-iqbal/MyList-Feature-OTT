@@ -1,6 +1,6 @@
 # 1. Clone the repo
 git clone <your-repo-url>
-cd ott-mylist
+cd MyList-Feature-OTT
 
 # 2. Start MongoDB + API (auto builds & hot-reloads in dev)
 docker-compose up --build
